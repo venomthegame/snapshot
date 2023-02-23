@@ -1,0 +1,153 @@
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  li.active {
+    font-weight: bold;
+  }
+  
+  li:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .photo-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .photo-item {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .photo-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .photo-info {
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .photo-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .photo-author {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+  }
+  
+
+  .search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-form input[type="search"] {
+    width: 60%;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .search-form button[type="submit"] {
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .search-form button[type="submit"]:hover {
+    background-color: #aaa;
+  }
+  
+  .search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 80px;
+    height: 40px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .search-button i {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  
+
+
+
+
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .photo-item {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .photo-item {
+      width: calc(50% - 10px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .photo-item {
+      width: 100%;
+    }
+  }
+  
